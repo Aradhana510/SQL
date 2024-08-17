@@ -1,0 +1,53 @@
+Q5. Employee 101
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Context:
+
+Unified Solutions Inc. is a technology consulting firm specialising in workforce management solutions, dedicated to providing tailored staffing solutions to optimise business operations. The company prides itself on deploying highly skilled professionals to meet the staffing needs of various industries. To maintain accurate records of employee career progression and ensure effective human resources management, Unified Solutions Inc. utilizes a comprehensive job history database.
+
+You are a database administrator at Unified Solutions Inc. As part of your responsibility to manage employee records, you need to retrieve details from the job history for all employees except for the employee with ID 101. This data is crucial for tracking career trajectories, facilitating performance evaluations, and supporting strategic workforce planning initiatives.
+
+Problem Statement:
+
+Write a query to get all the details of all the employees from job_history except for the employee with ID 101.
+
+Result:
+
+Return all the fields.
+Return the result ordered by employee_id and job_id in ascending order.
+
+Table: job_history
+
+Schema
+
+
+Sample Input:
+
+Table: job_history
+
+
+
+Sample output:
+
+
+
+Explanation: The above table shows all the employees who do not have an employee_id 101 and is ordered by employee_id and job_id in ascending order.
+
+SOLUTION
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM employees; 
+*/
+SELECT
+    *
+FROM
+    job_history
+WHERE
+    employee_id <> "101"
+
+ORDER BY
+    employee_id,
+    job_id;

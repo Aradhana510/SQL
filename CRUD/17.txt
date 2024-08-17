@@ -1,0 +1,41 @@
+Q7. Filter Movies
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Consider a database schema for movies with the following table:
+
+Movies: movie_id (Integer, Primary Key), movie_title (Text), genre (Text), release_year (Integer)
+
+Write an SQL query to retrieve the titles of movies released in 2000 or later that belong to the genres "Sci-Fi" or "Action."
+
+Return the result ordered by movie_id in ascending order.
+
+Sample Input:
+
+Table: Movies
+
+Input
+
+Sample Output:
+output
+
+SOLUTION
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT
+    movie_title
+
+FROM
+    Movies
+
+WHERE
+
+    release_year >= "2000"  AND (genre = "Sci-Fi"  OR  genre ="Action" )
+
+ORDER BY
+
+    movie_id;

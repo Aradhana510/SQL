@@ -1,0 +1,50 @@
+Q4. Total Amount
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Problem Description:
+
+Write a query to calculate the sub_total for each order, return the details of the orderNumber, productCode, and sub_total.
+
+Note : Please ensure to read the sample out explanation.
+
+
+
+Table: orderdetails
+Schema
+
+Note:
+
+Round off the sub_total up to two decimal places.
+Order the output by the orderNumber in ascending order and then by sub_total in descending order.
+Sample Input:
+
+Table: orderdetails
+
+
+
+Sample Output:
+
+
+
+Sample Explanation:
+
+To get the sub_total for each orderNumber, we must multiply the quantityOrdered column with the PriceEach column.
+
+
+SOLUTION
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM orderdetails; 
+*/
+SELECT
+    orderNumber,
+    productCode,
+    Round((quantityOrdered*priceEach),2) AS sub_total
+
+FROM
+    orderdetails
+order by
+    orderNumber,
+    sub_total desc ;

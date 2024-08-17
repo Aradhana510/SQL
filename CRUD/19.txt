@@ -1,0 +1,40 @@
+Q9. Filter Orders
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Consider a database schema for orders with the following table:
+
+Orders: order_id (Integer, Primary Key), customer_id (Integer), order_status (Text)
+
+Write an SQL query to retrieve the order IDs of orders placed by customer 1 that are either "Shipped" or "Delivered."
+
+Return the output ordered by order_id in ascending order.
+
+Sample Input:
+
+Table: Orders
+
+input
+
+Sample Output:
+
+output
+
+
+SOLUTIONN
+
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT
+    order_id
+FROM
+    Orders
+    
+WHERE
+    customer_id = "1" AND (order_status = "Shipped" OR order_status = "Delivered")
+ORDER BY
+    order_id;

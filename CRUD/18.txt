@@ -1,0 +1,39 @@
+Q8. Filter Customers
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Consider a database schema for customers with the following table:
+
+Customers: customer_id (Integer, Primary Key), customer_name (Text), last_purchase_date (Date)
+
+Write an SQL query to find the names of customers who have not made a purchase since January 1, 2023.
+
+Return the results ordered by customer_id in ascending order.
+
+Sample Input:
+
+Table: Customers
+
+Input
+
+Sample Output:
+
+Output
+
+SOLUTION
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT
+
+    customer_name
+FROM
+    Customers
+
+WHERE
+    last_purchase_date < "2023-01-01"
+ORDER BY
+    customer_id;

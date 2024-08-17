@@ -1,0 +1,56 @@
+Q6. Low-Quality Problems
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Table: Problems
+
+Column Name	Type
+problem_id	int
+likes	int
+dislikes	int
+
+problem_id is the primary key column for this table.
+Each row of this table indicates the number of likes and dislikes for a LeetCode problem.
+
+Write an SQL query to report the IDs of the low-quality problems. A LeetCode problem is low-quality if the like percentage of the problem (number of likes divided by the total number of votes) is strictly less than 60%.
+
+Return the result table ordered by problem_id in ascending order.
+
+The query result format is in the following example.
+
+Example :
+
+
+Problems table:
+
+problem_id	likes	dislikes
+6	1290	425
+11	2677	8659
+1	4446	2760
+7	8569	6086
+13	2050	4164
+10	9002	7446
+
+Output:
+
+problem_id
+7
+10
+11
+13
+
+SOLUTION
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT
+    problem_id
+FROM
+        Problems
+WHERE
+    (likes/(likes+dislikes))*100 < 60
+ORDER BY
+    problem_id;

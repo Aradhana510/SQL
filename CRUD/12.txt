@@ -1,0 +1,46 @@
+Q2. Selected Departments
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Problem Statement:
+
+Write a query to find the details of those employees who work in the departments with numbers included in 30, 40, or 90.
+
+Return the result ordered by employee_id in ascending order.
+Table: employees
+Schema
+
+Sample Input:
+
+Table: employees
+
+
+
+Sample output:
+
+
+
+Explanation: The above employees have department_id included in 30, 40, or 90.
+
+
+SOLUTION
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM departments; 
+*/
+SELECT
+    employee_id,
+    first_name,
+    job_id,
+    department_id
+
+FROM
+    employees
+
+WHERE
+    department_id in (30,40,90)
+
+ORDER BY
+    employee_id;

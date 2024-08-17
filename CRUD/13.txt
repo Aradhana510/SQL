@@ -1,0 +1,46 @@
+Q3. Office Codes
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Problem Statement:
+
+Write a query to find the employees whose officeCodes are not included in 4,6,7.
+
+Return the result ordered by firstName and lastName in ascending order.
+Table: employees
+Schema
+
+Sample Input:
+
+Table: employees
+
+
+
+Sample output:
+
+
+
+Explanation: The above table shows the employees whose office codes are not 4,6 or 7.
+
+SOLUTION
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM employees; 
+*/
+SELECT
+    firstName,
+    lastName,
+    jobTitle
+
+FROM 
+
+    employees
+
+WHERE
+     officeCode NOT IN (4,6,7)
+
+ORDER BY
+    firstName ,
+    lastName;

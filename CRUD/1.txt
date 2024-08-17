@@ -1,0 +1,24 @@
+Q1. Find Customer Referee
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Write an SQL query to fetch the names of the customer that are not referred by the customer with id = 102.
+
+Table: customer
+
+Sample Input:
+Test Case 1
+
+Sample Output:
+Output
+
+Explanation: Only customers Gwenneth and Daryl are referred with id=102
+
+
+SOLUTION ------->    /* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT name from customer where Not referee_id = "102";
+

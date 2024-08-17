@@ -1,0 +1,45 @@
+Q8. Invalid Tweets
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Write an SQL query to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
+
+Return the resultant table ordered by tweet_id in ascending order.
+
+Note: Use the length(column_name) function to find the length of the string.
+
+
+Table: tweets
+
+
+
+
+Sample Input:
+
+Table: tweets
+
+
+
+Sample Output:
+
+
+
+Explanation:
+tweets with id, 100, 102 and 105 has length greater than 15. They are invalid tweets.
+
+SOLUTION
+
+
+/* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT
+    tweet_id
+FROM
+    tweets
+WHERE
+    length(content) > 15
+ORDER BY
+    tweet_id

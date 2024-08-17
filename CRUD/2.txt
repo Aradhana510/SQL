@@ -1,0 +1,26 @@
+Q2. Find Customers With Positive Revenue this Year
+sql
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Write an SQL query to report the unique customers with postive revenue in the year 2021.
+
+Note: Use distinct operator to get unique values.
+
+Table: Customers
+
+
+
+Sample Input:
+Test Case 1
+
+Sample Output:
+Output 
+
+Explanation: Only customer_id 100 has positive revenue in the year 2021
+
+SOLUTION ---------->   /* YOUR QUERY GOES HERE
+   Example: SELECT * FROM EMPLOYEE; 
+*/
+SELECT  distinct customer_id from customers where revenue >= "0" and  year = "2021";
